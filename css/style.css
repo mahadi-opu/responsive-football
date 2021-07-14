@@ -128,11 +128,11 @@ nav ul li a{
   }
 
   .banner-image:hover img{
-    animation-name: slidein;
-    animation-duration: 3s;
-    animation-delay: 250ms;
-    animation-timing-function: ease-in-out;
-    animation-direction: reverse;
+        animation-name: slidein;
+        animation-duration: 3s;
+        animation-delay: 250ms;
+        animation-timing-function: ease-in-out;
+        animation-direction: reverse;
   }
   
 /*==== Playars-area ====*/
@@ -241,7 +241,7 @@ footer{
     color: #FFFFFF;
 }
 
-
+/* ========Mobile Sereen======== */
 
 @media only screen and (max-width:688px) {
 .container{
@@ -252,8 +252,8 @@ header{
     display: none;
 }
 .banners-area {
-    padding-bottom: 86px;
-    padding-top: 67px;
+    padding-bottom: 44px;
+    padding-top: 0px;
     margin-bottom: 0px;
 }
 .banner-content{
@@ -266,6 +266,7 @@ header{
 }
 .banner-text h1{
     font-size: 45px;
+    line-height: 55px;
 }
 .blog-area {
     margin-bottom: 50px;
@@ -287,8 +288,6 @@ header{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
-
-
 .Players-gallery {
     padding: 0px;
 }
@@ -296,10 +295,57 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
+.footer-inside{
+    width: 100%;
+}
 .footer-logo img{
     width: 80%;
     padding-bottom: 20px;
 }
+}
+/* ========Tablet Sereen======== */
+@media screen and (max-width: 992px) {
+    .container{
+        width:100%;
+        margin: 0 auto;
+    }
+    header {
+        padding: 42px 15px 42px;
+    }
+    .banners-area {
+        background-color: #2D25A0;
+        padding-bottom: 86px;
+        padding-top: 0px;
+        margin-bottom: 35px;
+    }
+    .banner-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px;
+    }
+    .banner-text h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .blogers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-area {
+        margin-bottom: 50px;
+        padding: 0px 20px;
+    }
+    .feature-content {
+        padding-bottom: 20px;
+    }
+
+
 
 }
+  
