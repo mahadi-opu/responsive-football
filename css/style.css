@@ -69,6 +69,7 @@ nav ul li a{
     padding: 10px 24px;
     width: 123px;
     height: 44px;
+    transition: all .3s ease-in-out;
 }
 .login-btn a{
     text-decoration: none;
@@ -83,7 +84,10 @@ nav ul li a{
     margin-right: 15px;
 }
 .login-btn:hover{
-    background: #cf7294;
+    color: black;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
 }
 /*================= 
     Banner 
@@ -115,9 +119,15 @@ nav ul li a{
     padding: 10px 24px;
     width: 168px;
     height: 44px;
+  
+    
 }
 .watch-btn:hover{
-    background: #cf7294;
+    transition: all 1s ease-in-out;
+    color: black;
+    cursor: pointer;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
 }
 .watch-btn i{
     color: #FAFAFA;
@@ -201,7 +211,7 @@ nav ul li a{
     grid-template-columns: repeat(2, 1fr);
 }
 .feature-content{
-    width: 100%;
+    width: 69%;
 }
 .feature-content h2{
     font-family: Poppins;
@@ -217,7 +227,7 @@ nav ul li a{
     line-height: 28px;
     color: #6C6C6C;
 }
-.feature-img img{
+.feature-images{
     width: 100%;
 }
 /*================= 
