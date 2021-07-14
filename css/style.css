@@ -1,7 +1,9 @@
 /*=== Fonts ====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/*==== common-style ====*/
+/*================= 
+common-style 
+==================*/
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +16,9 @@ a{
     font-size: 16px;
     line-height: 24px;
 }
+img{
+    width: 100%;
+}
 .container{
     width: 1440px;
     margin: 0 auto;
@@ -24,12 +29,13 @@ a{
     font-weight: 700;
     text-align: center;
 }
-/*==== Header ====*/
+/*================= 
+    Header 
+==================*/
 header{
     background-color: #2D25A0;
     padding: 42px 0px 42px;
 }
-/*==== common-style ====*/
 .header-content{
     display: flex;
     justify-content: space-between;
@@ -42,7 +48,6 @@ nav ul li{
     list-style: none;
     display: inline-block;
     padding: 10px;
-
 }
 nav ul li:hover{
     background: #E02C6D;
@@ -80,7 +85,9 @@ nav ul li a{
 .login-btn:hover{
     background: #cf7294;
 }
-/*==== Banner-Area ====*/
+/*================= 
+    Banner 
+==================*/
 .banners-area{
     background-color: #2D25A0;
     padding-bottom: 86px;
@@ -125,30 +132,25 @@ nav ul li a{
     line-height: 24px;
 }
 
-.banner-image img{
-    width: 100%;
+  @keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-250px);
+        transform: translateX(-250px);
+    }
+  }
+
+.banners-area:hover img{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 100%;
-    }
 
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-  .banner-image:hover img{
-        animation-name: slidein;
-        animation-duration: 3s;
-        animation-delay: 250ms;
-        animation-timing-function: ease-in-out;
-        animation-direction: reverse;
-  }
-  
-/*==== Playars-area ====*/
+/*================= 
+    Blog Area 
+==================*/
 .blog-area{
     margin-bottom: 150px;
 }
@@ -162,11 +164,23 @@ nav ul li a{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
+.blog-thumbnail{
+    overflow: hidden;
+    cursor: pointer;
+}
 .blog-thumbnail img{
     width: 100%;
+    transition: all 1s ease-in-out;
+}
+.blog-thumbnail img:hover{
+    transform: scale(1.2);
 }
 .blog-info h2{
-
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
 }
 .blog-info p{
     font-family: Poppins;
@@ -176,7 +190,9 @@ nav ul li a{
     color: #6C6C6C;
     justify-content: center;
 }
-/* feature */
+/*================= 
+    Featured-Area
+==================*/
 .featured-area{
     margin-bottom: 150px;
 }
@@ -204,7 +220,9 @@ nav ul li a{
 .feature-img img{
     width: 100%;
 }
-/* Players-gallery */
+/*================= 
+   Players-gallery
+==================*/
 .Players-gallery{
     background-color: #2D25A0;
     padding: 50px;
@@ -217,13 +235,17 @@ nav ul li a{
     margin: 10px;
     padding: 10px 10px 5px 10px;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 .player img{
-    width: 100%;
+    transition: all 1s ease-in-out;
 }
-/* contact */
-
-/* footer */
+.player img:hover{
+    transform: scale(1.2);
+}
+/*================= 
+   Footer - Area 
+==================*/
 footer{
     background-color: #FFFFFF;
     padding:63px 0px;
@@ -233,7 +255,6 @@ footer{
     width: 483.87px;
     margin: auto;
 }
-
 .footer-logo img{
     width: 100%;
     padding-bottom: 20px;
@@ -249,17 +270,23 @@ footer{
     color: #FFFFFF;
 }
 
+/*================= 
+   Thank You 
+==================*/
 
-/* ========Mobile Sereen======== */
+
+/* =======Mobile Sereen Breckpoint ======= */
 
 @media only screen and (max-width:688px) {
 .container{
         width:100%;
         margin: 0 auto;
-    }
+}
+/* ======= Header ======= */
 header{
     display: none;
 }
+/* ======= Banner ======= */
 .banners-area {
     padding-bottom: 44px;
     padding-top: 0px;
@@ -278,7 +305,24 @@ header{
     line-height: 55px;
     width: 100%;
 }
-.blog-area {
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+  }
+
+.banners-area:hover img{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ======= Blog ======= */
+.blog-area{
     margin-bottom: 50px;
 }
 .blogers{
@@ -287,6 +331,7 @@ header{
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
+/* ======= Feature Area ======= */
 .featured-area {
     margin-bottom: 50px;
     padding: 0px 20px;
@@ -298,6 +343,7 @@ header{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+/* ======Gllery Area ====== */
 .Players-gallery {
     padding: 0px;
 }
@@ -305,6 +351,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+/* ====== Footer ====== */
 .footer-inside{
     width: 100%;
 }
@@ -312,16 +359,19 @@ header{
     width: 80%;
     padding-bottom: 20px;
 }
+
 }
-/* ========Tablet Sereen======== */
+/* =======Tablet Sereen Breckpoint ======= */
     @media only screen and (min-width: 688px) and (max-width: 1159px){
     .container{
         width:100%;
         margin: 0 auto;
     }
+    /* ======= Header ======= */
     header {
         padding: 42px 15px 42px;
     }
+    /* ======= Banner ======= */
     .banners-area {
         background-color: #2D25A0;
         padding-bottom: 86px;
@@ -337,6 +387,23 @@ header{
         font-size: 45px;
         line-height: 55px;
     }
+    @keyframes slide-left {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+        }
+      }
+    
+    .banners-area:hover img{
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    /* ======= Blogs ======= */
     .blog-area {
         margin-bottom: 50px;
     }
@@ -346,6 +413,7 @@ header{
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
+    /* ======= Feature ======= */
     .feature{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -364,10 +432,11 @@ header{
         line-height: 60px;
         color: #0A0826;
     }
+    /* ======Gllery Area ====== */
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+    /* ====== Thank you ====== */
 }
   
