@@ -1,5 +1,4 @@
 /*=== Fonts ====*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /*==== common-style ====*/
@@ -10,55 +9,18 @@ body{
 }
 a{
     text-decoration: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 .container{
     width: 1440px;
     margin: 0 auto;
 }
-.login-btn{
-    display: flex;
-    flex-direction: row;
-    background: #E02C6D;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 24px;
-    width: 123px;
-    height: 44px;
-}
-.login-btn a{
-    color: #FAFAFA;
-    text-decoration: none;
-}
-.login-btn i{
-    color: #FAFAFA;
-    margin-right: 10px;
-}
-.login-btn:hover{
-    background: #cf7294;
-}
-.watch-btn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #E02C6D;
-    padding: 10px 24px;
-    width: 123px;
-    height: 44px;
-}
-.watch-btn:hover{
-    background: #cf7294;
-}
-.watch-btn i{
-    color: #FAFAFA;
-    margin-left: 10px;
-}
-.watch-btn a{
-    color: #FAFAFA;
-    text-decoration: none;
-}
-.section-title{
+.section-title {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
 }
@@ -90,9 +52,34 @@ nav ul li a{
     color: #F3F1FF;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: Poppins;
 }
-
+.login-btn{
+    display: flex;
+    flex-direction: row;
+    background: #E02C6D;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    width: 123px;
+    height: 44px;
+}
+.login-btn a{
+    text-decoration: none;
+    color: #F3F1FF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.login-btn i{
+    color: #FAFAFA;
+    margin-right: 15px;
+}
+.login-btn:hover{
+    background: #cf7294;
+}
 /*==== Banner-Area ====*/
 .banners-area{
     background-color: #2D25A0;
@@ -111,7 +98,33 @@ nav ul li a{
     font-size: 64px;
     line-height: 80px;
     color: #FFFFFF;
+    width: 70%;
 }
+.watch-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #E02C6D;
+    padding: 10px 24px;
+    width: 168px;
+    height: 44px;
+}
+.watch-btn:hover{
+    background: #cf7294;
+}
+.watch-btn i{
+    color: #FAFAFA;
+    margin-left: 15px;
+}
+.watch-btn a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .banner-image img{
     width: 100%;
 }
@@ -188,9 +201,6 @@ nav ul li a{
     line-height: 28px;
     color: #6C6C6C;
 }
-.feature-img{
-
-}
 .feature-img img{
     width: 100%;
 }
@@ -223,9 +233,7 @@ footer{
     width: 483.87px;
     margin: auto;
 }
-.footer-logo{
-    
-}
+
 .footer-logo img{
     width: 100%;
     padding-bottom: 20px;
@@ -240,6 +248,7 @@ footer{
     background: #E02C6D;
     color: #FFFFFF;
 }
+
 
 /* ========Mobile Sereen======== */
 
@@ -267,6 +276,7 @@ header{
 .banner-text h1{
     font-size: 45px;
     line-height: 55px;
+    width: 100%;
 }
 .blog-area {
     margin-bottom: 50px;
@@ -304,7 +314,7 @@ header{
 }
 }
 /* ========Tablet Sereen======== */
-@media screen and (max-width: 992px) {
+    @media only screen and (min-width: 688px) and (max-width: 1159px){
     .container{
         width:100%;
         margin: 0 auto;
@@ -327,6 +337,9 @@ header{
         font-size: 45px;
         line-height: 55px;
     }
+    .blog-area {
+        margin-bottom: 50px;
+    }
     .blogers{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -344,8 +357,17 @@ header{
     .feature-content {
         padding-bottom: 20px;
     }
-
-
+    .feature-content h2 {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 60px;
+        color: #0A0826;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
   
