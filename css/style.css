@@ -342,12 +342,25 @@ header{
     grid-row-gap: 30px;
 }
 /* ======= Feature Area ======= */
+
+.feature-content h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #0A0826;
+    margin: 0;
+}
 .featured-area {
     margin-bottom: 50px;
     padding: 0px 20px;
 }
 .feature-content {
     padding-bottom: 20px;
+    width: 100%;
+}
+.feature-images{
+    width: 100%;
 }
 .feature{
     display: grid;
@@ -434,6 +447,10 @@ header{
     }
     .feature-content {
         padding-bottom: 20px;
+        width: 100%;
+    }
+    .feature-images{
+        width: 100%;
     }
     .feature-content h2 {
         font-family: Poppins;
@@ -441,6 +458,7 @@ header{
         font-size: 35px;
         line-height: 60px;
         color: #0A0826;
+        margin: 0;
     }
     /* ======Gllery Area ====== */
     .gallery {
