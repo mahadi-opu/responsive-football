@@ -1,0 +1,70 @@
+/*=== Fonts ====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*==== common-style ====*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: #FAFAFA;
+    text-decoration: none;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+/*==== Header ====*/
+header{
+    background-color: #2D25A0;
+    padding: 42px 0px 86px;
+}
+/*==== common-style ====*/
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    padding-inline-start: 0px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+nav ul li:hover{
+    background: #E02C6D;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #F3F1FF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    background: #E02C6D;
+    align-items: center;
+    padding: 10px 24px;
+    width: 123px;
+    height: 44px;
+}
+.login a{
+    color: #FAFAFA;
+    text-decoration: none;
+}
+.header-banner{
+    display: flex;
+}
+.banner-content{
+    width: 50%;
+}
+.playars img{
+    width: 50%;
+}
